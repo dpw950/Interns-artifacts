@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Registraion form</title>
+    </head>
+    <body>
+        <header>
+            <img src="download.jpg" alt="Friendship" >
+            <h1 style="text-align: center;">Friendship Zone</h1>
+        </header>
+        <h1>Add your details to register</h1>
+
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" name="name" placeholder="Enter your name"   required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" pattern="[a-z0-9._%=\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"><br><br>
+            <label for="age">Age:</label>
+            <input type="number" name="age" min="18" ><br><br>
+            <label for="dob">Birth Day:</label>
+            <input type="date" name="dob"><br><br>
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" value="M">
+            <label for="M" name="M">M</label>
+            <input type="radio" name="gender" value="F">
+            <label for="F" name="F">F</label><br><br>
+            <label for="about">About:</label>
+            <textarea></textarea><br><br>
+            <label for="Contact">Phone:</label>
+            <input type="number" name="Contact"><br><br><br>
+            <label for="int">Interested to:</label>
+            <input type="radio" name="int">
+            <label for="friend" name="int">Friendship</label>
+            <input type="radio" name="int">
+            <label for="dating" name="int">Dating</label>
+            <label for="att">Attachment:</label>
+            <input type="file" name="att"><br><br>
+            <button><a href="registrationConfirm.html">Register</a></button>
+        </form>
+    </body>
+</html>
