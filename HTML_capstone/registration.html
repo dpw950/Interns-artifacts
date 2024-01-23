@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <header>
+        <div><img src="frnd_img.jpg"></div>
+        <h1 style="text-align: center;">Friendship Zone</h1>
+    </header>
+    <section id="registerform">
+        <h2>Add your details to register</h2>
+        <form action="registrationconfirmation.html">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" pattern="[A-Za-z]+" minlength="3" required>
+            </div>
+            <br>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            <br>
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" id="age" min="18" required>
+            </div>
+            <br>
+            <div>
+                <label for="bday">Birth day:</label>
+                <input type="date" id="bday" placeholder="mm/dd/yyyy" required>
+            </div>
+            <br>
+            <div>
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" placeholder="Male" required>
+                <label for="male">M</label>
+                <input type="radio" id="female" placeholder="Female" required>
+                <label for="female">F</label>
+            </div>
+            <br>
+            <div>
+                <label for="abt">About:</label>
+                <textarea id="abt" rows="5" cols="50"></textarea>
+            </div>
+            <br>
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" minlength="10" maxlength="10" pattern="[1-9]\d{9}" id="phone">
+            </div>
+            <br>
+            <span>
+                <label for="interest">Interested in:</label>
+                <input type="radio" id="f">
+                <label for="f">Friendship</label>
+                <input type="radio" id="d">
+                <label for="d">Dating</label>
+                <label for="attach">Attachment:</label>
+                <input type="file" placeholder="Choose files" required>
+            </span>
+            <div>
+                <br><button>Register</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
