@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registrationform</title>
+        <img src="ex2image1.png" alt="Logo">
+        <style>
+            h1 {text-align: center;}
+        </style>
+        <h1>Friendship Zone</h1>
+    </head>
+    <body>
+        <h2>Add your details to register</h2>
+        <form>
+            <label for="name">Name : </label>
+            <input type="text" id="name" minlength="3" required>
+            <p></p>
+            <br>
+            <label for="email">Email : </label>
+            <input type="email" id="email">
+            <p></p>
+            <br>
+            <label for="age">Age : </label>
+            <input type="number" id="age" min="18">
+            <p></p>
+            <br>
+            <label for="bday">Birth Date : </label>
+            <input type="date" id="bday">
+            <p></p>
+            <br>
+            <label for="gender">Gender : </label>
+            <input type="radio" id="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female">
+            <label for="female">Female</label>
+            <p></p>
+            <br>
+            <p>
+                About : 
+                <textarea name="about" id="about" cols="30" rows="5"></textarea>
+            </p>
+            <br>
+            <label for="phone">Phone : </label>
+            <input type="number" id="phone">
+            <p></p>
+            <br>
+            <label for="interest">Interested in : </label>
+            <input type="radio" id="friendship">
+            <label for="friendship">Friendship</label>
+            <input type="radio" id="dating">
+            <label for="dating">Dating</label>
+            <p></p>
+            <br>
+            <label for="attachment">Attachment : </label>
+            <input type="file" id="attachment">
+            <p></p>
+            <br>
+            <button>
+                <a href="Registrationconfirmation.html">Register</a>
+            </button>
+            <button>
+                <a href="Registrationconfirmation.html">Register as Admin</a>
+            </button>
+        </form>
+    </body>
+</html>
