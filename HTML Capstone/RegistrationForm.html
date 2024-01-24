@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <header>
+            <img src="friendship.jpg" alt="Friendship image" height="180px">
+            <center><h1>Friendship Zone</h1> </center>
+        </header>
+        <section>
+            <h2>Add your details to register</h2>
+            <form action="RegistrationConfirmation.html">
+                <label style="font-weight: bold;" for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required pattern="[a-zA-Z ]{3,}"><br><br>
+
+                <label style="font-weight: bold;" for="email">Email:</label>
+                <input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z]+\.[a-z]{2,4}" title="must be valid"><br><br>
+                
+                <label style="font-weight: bold;" for="age">Age:</label>
+                <input type="number" id="age" min="18"><br><br>
+
+                <label style="font-weight: bold;" for="bday">Birth day:</label>
+                <input type="date" id="bday"><br><br>
+
+                <label style="font-weight: bold;">Gender:</label>
+                <input type="radio" id="gendermale" value="male">
+                <label for="gendermale">M</label>
+                <input type="radio" id="genderfemale" value="female">
+                <label for="genderfemale">F</label><br><br>
+
+                <label style="font-weight: bold;" for="about">About:</label>
+                <textarea id="about" rows="4" cols="50"></textarea><br><br>
+
+                <label style="font-weight: bold;" for="phone">Phone:</label>
+                <input type="tel" id="phone"><br><br>
+
+                <label style="font-weight: bold;">Interested in:</label>
+                <input type="radio" id="friendship" value="friendship">
+                <label for="gendermale">Friendship</label>
+                <input type="radio" id="dating" value="dating">
+                <label for="genderfemale">Dating</label><br><br>
+
+                <label style="font-weight: bold;" for="file">Attachment:</label>
+                <input type="file" id="file"><br><br>
+
+                <input type="submit" value="Register"/>
+                <button>Resiter as Admin</button>
+                <!-- <button><a href="RegistrationConfirmation.html" style="text-decoration: none;">Register</a></button>
+                <button><a href="RegistrationConfirmationforAdmin.html" style="text-decoration: none;">Register as Admin</a></button> -->
+            </form>
+        </section>
+</body>
+</html>
