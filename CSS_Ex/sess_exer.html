@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div nesting</title>
+</head>
+<style>
+#div1{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: aqua;
+}
+#div2{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: black;
+    top: 40px;
+    /* top: calc(100%-50px); */
+    left: 40px;
+}
+.text1{
+    position: absolute;
+    left:0px;
+    top: 0px;
+}
+.text2{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.text3{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.text4{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+</style>
+<body>
+    <div id="div1">
+        <div class="text1">text</div>
+        <div id="div2"></div>
+        <div class="text2">text</div>
+        <div class="text3">text</div>
+        <div class="text4">text</div>
+    </div>
+</body>
+</html>
