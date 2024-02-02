@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+
+    <style>
+        .grid-container{
+            display:grid;
+            background-color: aqua;
+
+            grid: 150px / auto auto auto;
+  grid-gap: 10px;
+ 
+  padding: 10px;
+        }
+        .grid-container>div{
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+
+        }
+        .flex-container{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .item{
+            background-color: blueviolet;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid">1</div>
+        <div class="grid">
+            <div class="flex-container">
+                <div class="item">flex1</div>
+                <div class="item">flex2</div>
+            </div>
+        </div>
+
+        <div class="grid">3</div>
+        <div class="grid">4</div>
+        <div class="grid">5</div>
+        <div class="grid">6</div>
+    </div>
+</body>

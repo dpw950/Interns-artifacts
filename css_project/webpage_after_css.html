@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+
+    <style>
+        body{
+            background-color: bisque;
+        }
+
+        img{
+            height: 130px;
+            width: 270px;
+        }
+        .nav{
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+            background-color: cadetblue;
+        }
+        li{
+            float: left;
+        }
+        li a{
+            padding: 12px 14px;
+            text-align: center;
+            display: block;
+            color: aliceblue;
+        }
+        li a:hover{
+            background-color: coral;
+        }
+
+        .flex_container{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .flex_one{
+            background-color: rgb(123, 207, 245);
+            width: 700px;
+            height: 200px;
+            margin-top: 20px;
+        }
+
+        .flex_container2
+        {
+            display: flex;
+            flex-direction: column;
+        }
+        .flex_two
+        {
+            background-color: rgb(123, 207, 245);
+            width: 300px;
+            height: 130px;
+            margin-top: 20px;
+            margin-left: 40px;
+            position: absolute;
+            top: 210px;
+            left:750px;
+        }
+
+        .flex_three
+        {
+            background-color: rgb(123, 207, 245);
+            width: 300px;
+            height: 130px;
+            margin-top: 20px;
+            margin-left: 40px;
+            position: absolute;
+            top: 350px;
+            left:750px;
+        }
+
+        .flex_four
+        {
+            background-color: rgb(123, 207, 245);
+            width: 300px;
+            height: 130px;
+            margin-top: 20px;
+            margin-left: 40px;
+            position: absolute;
+            top: 490px;
+            left:750px;
+        }
+    </style>
+</head>
+<body>
+    <img src="header.jpg" alt="Header pic">
+
+    <section class="nav_bar">
+        <ul class="nav">
+            <li><a href="www.yahoo.com">Home</a></li>
+            <li><a href="www.yahoo.com">Examination</a></li>
+            <li><a href="www.yahoo.com">Courses</a></li>
+            <li><a href="www.yahoo.com">Contact</a></li>
+        </ul>
+    </section>
+
+    <section class="flex1">
+        <div class="flex_container">
+
+            <div class="flex_one">
+                <u class="underline"> <h1 class="topic">Welcome to Online Examination System</h1></u>
+        <p>This website is maintained by Kavya</p>
+
+        <p>In online examination system the exams are conducted using objecive questions.The questions can have single answer or multiple answers . The online examination system triesit's best on providing all the featues that an examination system must have.</p>
+            </div>
+            <div class="flex_one">
+                <u class="underline"><h1 class="topic">Taxonomy</h1></u>
+                <p>This website is maintained by Kavya</p>
+        
+                <p>In online examination system the exams are conducted using objecive questions.The questions can have single answer or multiple answers . The online examination system triesit's best on providing all the featues that an examination system must have.</p>
+            </div>
+           
+        </div>
+    </section>
+
+    <section class="flex2">
+
+        <div class=flex_container2>
+
+            <div class="flex_two">
+                <h1><b>Circular</b></h1>
+                 <p>Scholarship applications will bw available at all the colleges from 12th September 2016</p>
+            </div>
+
+            <div class="flex_three">
+                <h1><b>Notification</b></h1>
+                <p>Last date for submitting re-evaluation form has been extended till 26th September</p>
+            </div>
+
+            <div class="flex_four">
+                <h1><b>Latest News</b></h1>
+                <p>Examination time table for the current financial year will be announced soon.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

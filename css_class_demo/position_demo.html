@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+<style>
+    div{
+        width:100px;
+        height: 100px;
+        margin: 10px;
+    }
+
+    #div1{
+        background-color: antiquewhite;
+        position: static;
+    }
+
+    #div2{
+        background-color: aqua;
+        position: relative;
+        bottom: 30px;
+        left: 30px;
+        
+    }
+    #div3{
+        background-color: aquamarine;
+        position: fixed;
+        bottom: 50px;
+        right: 10px;
+    }
+
+    #div4{
+        background-color: chartreuse;
+        position: absolute;
+    }
+
+    #div5{
+        background-color: gold;
+        position: sticky;
+    }
+
+</style>
+</head>
+
+<body>
+    <div id="div1">static:  no top,bottom,left,right</div>
+    <div id="div2">relative: where it was</div>
+    <div id="div3">fixed :from the viewport.scrolling won't affect</div>
+    <div id="div4">absolute</div>
+    <div id="div5">sticky</div>
+</body>
