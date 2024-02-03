@@ -1,9 +1,9 @@
 ## A look at my HTML, CSS exercise solutions
 ### HTML capstone
 <br>Home page<br>
-<img src="https://github.com/dpw950/Interns-artifacts/assets/68768878/39db34f1-d877-4b17-a874-2434f38ac859" align="left" height="480" width="480">
+<img src="https://github.com/dpw950/Interns-artifacts/assets/68768878/39db34f1-d877-4b17-a874-2434f38ac859" align="left" height="360" width="480">
 <br>Friend List using tables<br>
-![127 0 0 1_5500_HTML_capstone_friend-list html](https://github.com/dpw950/Interns-artifacts/assets/68768878/68375030-0979-4e3e-af89-5e34bb16ad5d)
+<img src="https://github.com/dpw950/Interns-artifacts/assets/68768878/68375030-0979-4e3e-af89-5e34bb16ad5d" align="left" height="360" width="480">
 <br>Register form with validation<br>
 ![127 0 0 1_5500_HTML_capstone_registration html](https://github.com/dpw950/Interns-artifacts/assets/68768878/75fc473b-30ee-4044-97e7-56c3b2db48cc)
 <br>Confirmation<br>
