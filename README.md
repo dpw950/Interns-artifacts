@@ -2,6 +2,7 @@
 ### HTML capstone
 <br>Home page<br>
 ![127 0 0 1_5500_HTML_capstone_homepage html](https://github.com/dpw950/Interns-artifacts/assets/68768878/39db34f1-d877-4b17-a874-2434f38ac859)
+<img src="https://github.com/dpw950/Interns-artifacts/assets/68768878/39db34f1-d877-4b17-a874-2434f38ac859" align="left" height="48" width="48">
 <br>Friend List using tables<br>
 ![127 0 0 1_5500_HTML_capstone_friend-list html](https://github.com/dpw950/Interns-artifacts/assets/68768878/68375030-0979-4e3e-af89-5e34bb16ad5d)
 <br>Register form with validation<br>
