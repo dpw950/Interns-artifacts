@@ -1,4 +1,4 @@
-## A look at my HTML, CSS, JS exercises
+## A look at my HTML, CSS exercise solutions
 ### HTML capstone
 <br>Home page<br>
 ![127 0 0 1_5500_HTML_capstone_homepage html](https://github.com/dpw950/Interns-artifacts/assets/68768878/39db34f1-d877-4b17-a874-2434f38ac859)
