@@ -5,11 +5,11 @@
 <br>
 Friend List using tables
 <img src="https://github.com/dpw950/Interns-artifacts/assets/68768878/68375030-0979-4e3e-af89-5e34bb16ad5d" align="left" height="360" width="480">
-<br>
-Register form with validation
+<br><br>
+Register form with validation<br>
 <img src="https://github.com/dpw950/Interns-artifacts/assets/68768878/75fc473b-30ee-4044-97e7-56c3b2db48cc" align="left" height="360" width="480">
-<br>
-Confirmation
+<br><br>
+Confirmation<br>
 <img src="https://github.com/dpw950/Interns-artifacts/assets/68768878/7bf5373e-be27-44dd-a2ff-2e95dcf2b37d" align="left" height="360" width="480">
 <br><br>
 
