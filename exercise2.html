@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-columns:repeat(3,1fr) ;
+            gap: 20px;
+        }
+        .grid-item{
+            background-color: rgba(244, 18, 165, 0.8);
+            padding: 20px;
+            text-align: center;
+            height: 120px;
+        }
+        .flex-container{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .flex-item{
+            background-color: rgba(231, 151, 33, 0.8);
+            padding: 20px;
+            text-align: center;
+        }
+        .div1{
+            background-color:red; 
+            position: relative; 
+            width: 500px;
+            height: 500px;
+        }
+        .div2{
+            background-color:green;  
+            position: absolute;
+            text-align: center;
+            width: 100px;
+            height:  100px;
+            margin-top: 40%;
+            margin-bottom: 40%;
+            margin-left: 40%;
+            margin-right: 40%;
+        }
+        .tp{
+            text-align: left;
+        }
+        .bt{
+            margin-top: 92%;
+            text-align: left;
+        }
+        .lf{
+            margin-top: -3%;
+            text-align: right;
+        }
+        .rg{
+            text-align: right;
+            margin-top: -4%;
+        }
+        .cr{
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">
+            <div class="flex-container">
+                <div class="flex-item">7</div>
+                <div class="flex-item">8</div>
+            </div>
+        </div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+    </div>
+    <div class="div1">
+        <div class="div2">
+        </div>
+        <div class="cr">
+            <div class="tp">Sanjay</div>
+            <div class="lf">Rojar</div>
+            <div class="bt">Sanjay</div>
+            <div class="rg">Rojar</div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
