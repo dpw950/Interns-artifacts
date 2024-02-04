@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex & Grid</title>
+    <style>
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 25px;
+            color: rgb(67, 66, 66);
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: rgb(218, 141, 176);
+            gap: 10px;
+        }
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .flex-container .flexbox{
+            background-color: rgb(216, 153, 216);
+            border: 1px solid;
+        }
+        .grid-container div{
+            background-color: rgb(255, 192, 207);
+            padding: 20px 0;
+            text-align: center;
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div>Grid 1</div>
+        <div>
+            <div class="flex-container">
+                <div class="flexbox">Flex</div>
+                <div class="flexbox">Flex</div>
+            </div>
+        </div>
+        <div>Grid 3</div>
+        <div>Grid 4</div>
+        <div>Grid 5</div>
+        <div>Grid 6</div>
+    </div>
+</body>
+</html>
