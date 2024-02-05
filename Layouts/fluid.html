@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        .main1{
+            width: 100%;
+            height: 100px;
+            background-color: red;
+        }
+        .main2{
+            width: 100%;
+            height: 100px;
+            position: absolute;
+        }
+        .sub1{
+            width: 33.3%;
+            height: 100px;
+            background-color: yellow;
+            position:relative;
+        }
+        .sub2{
+            width: 33.3%;
+            height: 100px;
+            margin-left: 33.3%;
+            margin-top: -100px;
+            background-color: green;
+            position: relative;
+        }
+        .sub3{
+            width: 33.3%;
+            height: 100px;
+            margin-left: 66.6%;
+            margin-top: -100px;
+            background-color: blue;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="main1"></div>
+    <div class="main2">
+        <div class="sub1"></div>
+        <div class="sub2"></div>
+        <div class="sub3"></div>
+    </div>
+</body>
+</html>
