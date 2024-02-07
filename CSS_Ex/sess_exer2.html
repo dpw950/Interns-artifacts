@@ -1,0 +1,57 @@
+<!-- 5 Feb 2024 fixed layout  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed layout</title>
+</head>
+<style>
+    #parent{
+        height: 1000px;
+        width: 1000px;
+        background-color: antiquewhite;
+    }
+    #header{
+        height: 300px;
+        width: 1000px;
+        background-color: aqua;
+    }
+    /* .flex-container{
+        width: 1000px;
+        display: flex;
+        flex-direction: row;
+    }
+    .flex-item{
+        width: 33.33%;
+        height: 700px;
+        background-color: blueviolet;
+        border-style: solid;
+    } */
+    #colparent{
+        /* position: relative; */
+        /* width: 80%; Takes 80% of screen width */
+        width: 1000px;
+    }
+    #col{
+        /* position: absolute; - for fixed */
+        width: 329.3px;
+        margin: 0;
+        float: left;
+        /* display: inline-block; */
+        height: 700px;
+        border-style: solid;      
+        background-color: blueviolet;
+    }
+</style>
+<body>
+    <div id="parent">
+        <div id="header"></div>
+        <div id="col-parent">
+            <div id="col">div1</div>
+            <div id="col">div2</div>
+            <div id="col">div3</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!-- 5 Feb 2024 Responsive layout  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive layout</title>
+</head>
+<style>
+    .parent{
+        height: 1000px;
+        width: 100%;
+        background-color: antiquewhite;
+        /* display: flex; */
+        /* flex-direction: column; */
+    }
+    .child{
+        height: 300px;
+        width: 100%;
+        background-color: aqua;
+    }
+    .flex-container{
+        width: 100%;
+        /* flex: 2; */
+        /* float: left; */
+        /* display: flex; */
+        /* flex-grow: 2; */
+        /* flex-direction: row; */
+    }
+    .flex-item{
+        width: 33.33%;
+        min-width: 300px;
+        height: 700px;
+        background-color: blueviolet;
+        float: left;
+        /* border-style: solid; */
+    }
+    
+</style>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+        <div class="flex-container">
+            <div class="flex-item">div1</div>
+            <div class="flex-item">div2</div>
+            <div class="flex-item">div3</div>
+        </div>
+    </div>
+</body>
+</html>

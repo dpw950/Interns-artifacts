@@ -1,0 +1,64 @@
+<!-- 5 Feb 2024 fluid design -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluid layout</title>
+</head>
+<style>
+    #parent{
+        height: 1000px;
+        width: 100%;
+        background-color: antiquewhite;
+    }
+    #header{
+        height: 300px;
+        width: 100%;
+        background-color: aqua;
+    }
+    #colparent{
+        /* width: 80%; Takes 80% of screen width */
+        width: 100%;
+    }
+    #col1{
+        /* position: absolute; */
+        width: 33.33%;
+        margin: 0;
+        float: left;
+        /* display: inline-block; */
+        height: 700px;
+        /* border-style: solid;       */
+        background-color: blueviolet;
+    }
+    #col2{
+        /* position: absolute; */
+        width: 33.33%;
+        margin: 0;
+        float: left;
+        /* display: inline-block; */
+        height: 700px;
+        /* border-style: solid;       */
+        background-color: yellow;
+    }
+    #col3{
+        /* position: absolute; */
+        width: 33.33%;
+        margin: 0;
+        float: left;
+        /* display: inline-block; */
+        height: 700px;
+        background-color: green;
+    }
+</style>
+<body>
+    <div id="parent">
+        <div id="header"></div>
+        <div id="col-parent">
+            <div id="col1">div1</div>
+            <div id="col2">div2</div>
+            <div id="col3">div3</div>
+        </div>
+    </div>
+</body>
+</html>
