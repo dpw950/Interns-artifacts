@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediaQuery</title>
+  <style>
+    .parent{
+      height:600px;
+    }
+    .section1{
+      background-color: yellowgreen;
+      height:300px;
+    }
+    .container{
+      display:flex;
+      height:300px;     
+      
+    }
+    .item1{
+      background-color: aqua;  
+      width:33%;
+      height:100%;
+    }
+    .item2{
+      background-color: rgb(208, 188, 37);
+      width:33%;
+      height:100%;
+    }
+    .item3{
+      background-color: rgb(140, 75, 219);
+      width:34%;
+      height:100%;
+    }
+    @media(max-width:200px){
+      .container{
+        flex-direction:column;
+        
+      }
+      .container div{
+        width:100%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="section1"></div>  
+    <div class="container">
+      <div class="item1"></div>
+      <div class="item2"></div>
+      <div class="item3"></div>      
+    </div>
+  </div>  
+</body>
+</html>
