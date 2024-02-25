@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" href="images/home-titleimg.png" type="icon/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div id="title"><img id="logo" src="images/Pharma JS capstone title image.jpg" alt="Logo">TPT Pharma</div>
+        <div id="nav-container">
+            <ul id="nav">
+                <li><a href="home.html"><i class="fa fa-home"></i>  Home</a></li>
+                <li><a href="prods.html"><i class="fa fa-medkit"></i>  Products</a></li>
+                <li><a href="invests.html"><i class="fa fa-calendar"></i>  Investors</a></li>
+                <li><a href="about.html"><i class="fa fa-user-o"></i>  About Us</a></li>
+            </ul>
+        </div>
+        <div class="image-container">
+            <div class="image-wrapper">
+              <div>
+                <img src="images/header1.jpg" alt="header image 1">
+              </div>
+              <div>
+                <img src="images/header2.jpg" alt="header image 2">
+              </div>
+              <div>
+                <img src="images/header3.jpg" alt="header image 3">
+              </div>
+              <div>
+                <img src="images/header4.jpg" alt="header image 4">
+              </div>
+              <div>
+                <img src="images/header5.jpg" alt="header image 5">
+              </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="content">
+        <div class="grid-container">
+            <div class="grid-item">
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <h3>Vision</h3>
+                        <p>We strive to set the standard for delivering safe, effective medicines and vaccines that offer value to the health system and have the potential to save lives, prevent illness, improve health and enhance wellbeing</p>
+                    </div>
+                    <div class="flex-item">
+                        <h3>Mission</h3>
+                        <p>We live our purpose in many different ways and we don't achieve these standards alone.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <h3>Why Us?</h3>
+                <p> We source the best science talent in the world and we leverage collaborations with healthcare providers, patient communities, academia, and policy makers.</p>
+                <p>With the aid of these fundamental collaborations, our scientific teams, and the adoption of digital technologies to enhance drug development, we can lead the conversation on pro-innovation/pro-patient policies, helping to bring new medicines to patients as well as improving access to them</p>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    // Loop image sequence
+    function imageCarousel(){
+        const imageWrapper = document.querySelector('.image-wrapper');
+        const imageItems = document.querySelectorAll('.image-wrapper > *');
+        const imageLength = imageItems.length;
+        const perView = 2;
+        let totalScroll = 0;
+        const delay = 2000;
+        imageWrapper.style.setProperty('--per-view', perView);
+        for(let i = 0; i < perView; i++) {
+        imageWrapper.insertAdjacentHTML('beforeend', imageItems[i].outerHTML);
+        }
+
+        let autoScroll = setInterval(scrolling, delay);
+
+        function scrolling() {
+        totalScroll++;
+        if(totalScroll == imageLength + 1) {
+            clearInterval(autoScroll);
+            totalScroll = 1;
+            imageWrapper.style.transition = '0s';
+            imageWrapper.style.left = '0';
+            autoScroll = setInterval(scrolling, delay);
+        }
+        const widthEl = document.querySelector('.image-wrapper > :first-child').offsetWidth + 24;
+        imageWrapper.style.left = `-${totalScroll * widthEl}px`;
+        imageWrapper.style.transition = '.3s';
+        }
+    }
+
+    imageCarousel();
+</script>
+</html>
