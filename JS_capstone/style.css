@@ -1,0 +1,471 @@
+html{
+    margin: 15px;
+    background-color: antiquewhite;
+    box-sizing: border-box;
+}
+body{
+    background-color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px;
+    padding: 20px;
+    border-style: solid;
+}
+
+/* Header and Home page Navigation Menu CSS */
+header{
+    align-items: center;
+    margin: 15px;
+}
+#nav-container{
+    background-color: rgb(255, 248, 220, 0.5);
+    overflow: hidden;
+    width: 100%;
+}
+header #logo{
+    display: inline-block;
+    width: 70px;
+    height: 35px;
+    padding-right: 5px;
+}
+#title{
+    margin-bottom: 20px;
+    text-align: center;
+    justify-self: unset;
+    font-weight: 600;
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#nav-container ul{
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+#nav-container li{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#nav-container li a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px 30px;
+  
+}
+#nav-container li a:hover:not(.active) {
+    background-color: darkcyan;
+    color: antiquewhite;
+}
+@media (max-width: 768px) {
+    #nav-container ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav-container li {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    #nav-container {
+        padding: 5px;
+    }
+}
+
+/* Image Loop Animation CSS */
+.image-container {
+    margin-top: 15px;
+    overflow-x: hidden;
+    max-width: 1200px;
+}
+.image-wrapper {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% - (1.5rem * (var(--per-view) - 1))) / var(--per-view));
+    grid-gap: 1.5rem;
+    position: relative;
+    left: 0;
+    transition: .3s;
+}
+@media (max-width : 500px){
+    .image-wrapper{
+        grid-auto-columns: 100%;
+    }
+}
+.image-wrapper > * {
+    aspect-ratio: 16 / 9;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: .5rem;
+}
+
+/* Content Section CSS */
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    width: 100%;
+}
+@media (max-width: 500px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px;
+    }
+}
+.grid-item{
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: antiquewhite;
+    border-color: brown;
+    border-style: dashed;
+    text-align: justify;
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-item{
+    padding: 0 10px 0 10px;
+}
+.flex-item:first-of-type > p:first-of-type{
+    border-bottom: 1px dotted;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+}
+h3{
+    text-align: center;
+}
+
+/* PRODUCT PAGE */
+
+/* Products page Navigation Menu CSS */
+#nav-container-prods{
+    background-color: rgb(255, 248, 220, 0.5);
+    overflow: hidden;
+    width: 100%;
+}
+#nav-container-prods ul{
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+#nav-container-prods li{
+    padding: 10px 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#nav-container-prods li:first-of-type{
+    padding-right: 100px;
+}
+#nav-prods li,a{
+    color: black;
+    text-decoration: none;
+    padding: 10px 30px; 
+}
+#nav-prods i{
+    margin: 5px;
+    font-size: 20px;
+}
+#nav-prods li a:hover:not(.active) {
+    background-color: darkcyan;
+    color: antiquewhite;
+}
+#nav-prods li:first-of-type > a:first-of-type:hover:not(.active){
+    cursor: pointer;
+    background-color: rgb(255, 248, 220, 0.5);
+    color: brown;
+}
+@media (max-width: 768px) {
+    #nav-container-prods ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav-container-prods li {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    #nav-container-prods {
+        padding: 5px;
+    }
+    #nav-container-prods li:first-of-type{
+        padding-right: 0;
+    }
+}
+
+/* Search section CSS */
+#search-bar{
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+#search-content{
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+#disp-msg{
+    padding-left: 20px;
+    color: red;
+}
+#search-bar .fa.fa-search {
+    position: relative;
+    left: 30px;
+    top: 10px;
+    color: #ccc;
+    font-size: 16px;
+}
+
+/* Card Flip CSS */
+#flexcards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+}
+.card-container{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    perspective: 1000px;
+    margin: 10px;
+    padding: 10px;
+}
+.card-inner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s 1s;
+    transform-style: preserve-3d;
+    flex: 1 0 auto;
+}
+.card:hover .card-inner{
+    transform: rotateY(-180deg);
+}
+.card-front,.card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: linear-gradient(to bottom right, beige, rgb(14, 158, 190));
+}
+.card-back{
+    background: linear-gradient(to bottom right, beige, rgb(103, 192, 211));
+    color: black;
+    transform: rotateY(180deg);
+}
+@media (max-width: 768px) {
+    .card-container{
+        flex-direction: column;
+    }
+}
+
+/* Card content CSS */
+.card-front{
+    text-align: center;
+    color: aliceblue;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-front .image-container img{
+    display: block;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    padding: 20px;
+}
+.card-front .name{
+    position: absolute;
+    bottom: 25px;
+}
+.card-back{
+    text-align: center;
+}
+.card-back p{
+    padding-bottom: 10px;
+}
+.card-back h4{
+    font-size: 18px;
+    margin-top: 35px;
+    margin-bottom: 0;
+}
+.card-back p,h4{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.card-back .type,.state{
+    position: relative;
+    left: 20px;
+    top: 5px;
+    max-width: 280px;
+}
+.card-back .state {
+    position: relative;
+    top: 5px;
+}
+.card-back .description > p{
+    position: relative;
+    font-size: 13px;
+    max-width: 280px;
+    max-height: 70px;
+    overflow-y: scroll;
+    text-align: justify;
+    left: 20px;
+    padding-right: 5px;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: burlywood; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(175, 114, 33); 
+}
+.card-back .description > p::-webkit-scrollbar {
+    width: 8px;
+}
+.card-back .description > p::-webkit-scrollbar-thumb {
+    background: rgb(1, 201, 201); 
+    border-radius: 10px;
+}
+.card-back .description > p::-webkit-scrollbar-thumb:hover {
+    background: aquamarine; 
+}
+.card-back .footer-note{
+    text-align: right;
+}
+.card-back .footer-note #footer-note-caution{
+    color: white;
+    font-size: 10%;
+    position: relative;
+    right: 22px;
+    bottom: 5px;
+}
+
+
+
+/* ABOUT US PAGE */
+.grid-container-about{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    width: 100%;
+    background: linear-gradient(to bottom right, rgb(247, 216, 105),lightpink);
+}
+@media (max-width: 500px) {
+    .grid-container-about {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px;
+    }
+}
+.grid-item-about{
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    border-color: brown;
+    border-style: dashed;
+    text-align: justify;
+}
+.grid-item-about.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+.grid-item-about img{
+    size: 100%;
+}
+.grid-item-about.flex-container.flex-item1{
+    margin-top: 5px;
+}
+.flex-item1 li{
+    margin-bottom: 20px;
+}
+
+
+/* INVESTORS PAGE */
+#available{
+    display: inline-block;
+}
+#available > p{
+    display: inline;
+    margin-left: 20px;
+}
+#available button{
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(246, 176, 119);
+}
+#search-quarters{
+    padding: 20px 20px;
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+#quarter,#year{
+    /* width: 30%; */
+    padding: 10px;
+    /* margin-left: 20px; */
+    text-align: center;
+}
+#search-bar-quarters .fa.fa-search {
+    font-size: 18px;
+}
+#search-bar-quarters label{
+    margin-left: 10px;
+}
+.table-container{
+    display: flex;
+    justify-content: center;
+}
+#quarters-table{
+    padding: 10px;
+    margin: 15px;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid rgb(241, 194, 132);
+    font-size: 18px;
+}
+#quarters-table th, #quarters-table td {
+    text-align: left;
+    padding: 12px;
+    border-left: 1px solid rgb(241, 194, 132);
+    text-align: center;
+}
+
+#quarters-table tr {
+    border-bottom: 1px solid rgb(241, 194, 132);
+}
+
+#quarters-table thead {
+    background-color: beige;
+}
+#quarters-table #values tr:hover{
+    background-color: rgb(203, 225, 244);
+}
+#disp-msg-table{
+    padding-left: 20px;
+    font-size: 18px;
+    color: red;
+}
