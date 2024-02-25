@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/invests-titleimg.jpg" type="icon/x-icon">
+    <title>Quarter Details</title>
+</head>
+<body>
+    <header>
+        <div id="title"><img id="logo" src="images/Pharma JS capstone title image.jpg" alt="Logo"></div>
+        <div id="nav-container-prods">
+            <ul id="nav-prods">
+                <li><a href="home.html"><i class="fa fa-home"></i>TPT Pharma</a></li>
+                <li><a href="prods.html"><i class="fa fa-medkit"></i>Products</a></li>
+                <li><a href="invests.html"><i class="fa fa-calendar"></i>Investors</a></li>
+                <li><a href="about.html"><i class="fa fa-user-o"></i>About Us</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="title">Quarter Details</div>
+    <section id="search-quarters">
+        <div id="search-bar-quarters">
+            <i class="fa fa-search"></i>
+            <label for="quarter">Quarter:</label>
+            <input type="text" placeholder="Enter a quarter" id="quarter" required>
+            <label for="year">Financial Year:</label>
+            <input type="text" placeholder="Enter a year" id="year" required>
+        </div>
+    </section>
+    <section id="quarter-details">
+        <div id="available">
+            <p>Quarter details available for:</p><button>Q3 2018</button><button>Q4 2018</button><button>Q2 2019</button><button>Q3 2019</button><button>Q4 2019</button><button>Q1 2020</button>
+        </div>
+        <div class="table-container">
+            <table id="quarters-table">
+                <thead>
+                    <tr>
+                        <th>Quarter</th>
+                        <th>Sales</th>
+                        <th>Other Income</th>
+                        <th>Gross Profit</th>
+                        <th>Depreciation</th>
+                        <th>Interest</th>
+                        <th>Tax</th>
+                        <th>Net Profit</th>
+                    </tr>
+                </thead>
+                <tbody id="values">
+                    <tr>
+                        <td>Q12020</td>
+                        <td>218583984</td>
+                        <td>456.8</td>
+                        <td>74837438</td>
+                        <td>1126.7</td>
+                        <td>7483.9</td>
+                        <td>4536454</td>
+                        <td>6776436.3</td>
+                    </tr>
+                    <tr>
+                        <td>Q42019</td>
+                        <td>354643534</td>
+                        <td>126.8</td>
+                        <td>3546438</td>
+                        <td>126.7</td>
+                        <td>8683.3</td>
+                        <td>57364</td>
+                        <td>9875436.8</td>
+                    </tr>
+                    <tr>
+                        <td>Q32019</td>
+                        <td>516547335</td>
+                        <td>233.6</td>
+                        <td>21837438</td>
+                        <td>5126.7</td>
+                        <td>8983.9</td>
+                        <td>9036423.8</td>
+                        <td>5774436</td>
+                    </tr>
+                    <tr>
+                        <td>Q22019</td>
+                        <td>56389563.2</td>
+                        <td>156.3</td>
+                        <td>14737438</td>
+                        <td>2146.7</td>
+                        <td>6483.3</td>
+                        <td>126453</td>
+                        <td>277641.5</td>
+                    </tr>
+                    <tr>
+                        <td>Q42018</td>
+                        <td>787232472</td>
+                        <td>676.8</td>
+                        <td>573857.9</td>
+                        <td>526.3</td>
+                        <td>5835.9</td>
+                        <td>1728782</td>
+                        <td>783134.3</td>
+                    </tr>
+                    <tr>
+                        <td>Q32018</td>
+                        <td>56764723</td>
+                        <td>989.3</td>
+                        <td>1435736</td>
+                        <td>5323.7</td>
+                        <td>1243.9</td>
+                        <td>7846532</td>
+                        <td>765756.6</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="disp-msg-table"></div>
+    </section>
+</body>
+<script>
+    function searchTable(searchStringYear, searchStringQuarter) {
+        const table = document.querySelector('#quarters-table');
+        const tableRows = table.querySelectorAll('#values tr');
+        const notFoundMsg = document.querySelector('#disp-msg-table');
+
+        // Check if search strings are empty
+        if (searchStringYear === '' && !searchStringQuarter === '') {
+            // Show all rows
+            tableRows.forEach(row => row.style.display = '');
+            notFoundMsg.textContent = '';
+        }
+        var searchFor = searchStringQuarter+searchStringYear;
+        searchFor = searchFor.toLowerCase();
+        console.log(searchFor)
+        let found = false;
+
+        // Loop through table rows
+        for (let i = 0; i < tableRows.length; i++) {
+            const row = tableRows[i];
+            const firstCell = row.querySelector('td:first-child'); // Get first cell
+            if (firstCell) {
+                const cellText = firstCell.textContent.toUpperCase();
+                console.log(cellText)
+                if(cellText.toLowerCase().includes(searchFor)){
+                    row.style.display = '';
+                    found = true;
+                } else {
+                    row.style.display = 'none';
+                }
+            } else {
+            console.error("Missing first cell in table row:", row);
+            }
+        }
+
+        // Update not found message
+        notFoundMsg.textContent = found ? '' : "Sorry, no matching quarters found.";
+}
+
+// Event listeners for search inputs (adjust selectors as needed)
+const searchInputYear = document.querySelector('#year');
+const searchInputQuarter = document.querySelector('#quarter');
+
+searchInputYear.addEventListener('input', () => {
+  const searchStringYear = searchInputYear.value;
+  const searchStringQuarter = searchInputQuarter.value;
+  searchTable(searchStringYear, searchStringQuarter);
+});
+
+searchInputQuarter.addEventListener('input', () => {
+  const searchStringYear = searchInputYear.value;
+  const searchStringQuarter = searchInputQuarter.value;
+  searchTable(searchStringYear, searchStringQuarter);
+});
+
+</script>
+</html>
