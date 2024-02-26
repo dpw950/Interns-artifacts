@@ -217,7 +217,7 @@
         var found = false;
         if (searchString) {
             for (let i = 0; i < arrDrugs.length; i++) {
-            const drugName = arrDrugs[i].textContent.toLowerCase(); // Use textContent for text content
+            const drugName = arrDrugs[i].textContent.toLowerCase();
             const card = cards[i];
             if (drugName.includes(searchString.toLowerCase())) {
                 card.style.display = ''; // Show card if match
