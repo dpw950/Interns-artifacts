@@ -23,7 +23,8 @@ Confirmation<br>
 <br>
 
 <br>Products page<br>
-![127 0 0 1_5500_Interns-artifacts_JS_capstone_prods html](https://github.com/dpw950/Interns-artifacts/assets/68768878/a7fbeb43-72fd-48b1-988a-42b9f8c140b5)
+![127 0 0 1_5500_Interns-artifacts_JS_capstone_prods html](https://github.com/dpw950/Interns-artifacts/assets/68768878/a7fbeb43-72fd-48b1-988a-42b9f8c140b5)<br>
+![127 0 0 1_5500_Interns-artifacts_JS_capstone_prods html (3)](https://github.com/dpw950/Interns-artifacts/assets/68768878/3235d508-6d2b-4e8d-b4e8-435bb6e5c389)
 <br>
 <br>Products page search<br>
 ![127 0 0 1_5500_Interns-artifacts_JS_capstone_prods html (1)](https://github.com/dpw950/Interns-artifacts/assets/68768878/35eef4fb-496f-46a3-a809-7ddec2ffc36d)
@@ -37,7 +38,7 @@ Confirmation<br>
 <br>
 
 <br>Investors page search<br>
-![127 0 0 1_5500_Interns-artifacts_JS_capstone_invests html (2)](https://github.com/dpw950/Interns-artifacts/assets/68768878/5fc1f643-5f25-45c3-a5d2-9c1187aaf0dd)
+![127 0 0 1_5500_Interns-artifacts_JS_capstone_invests html (2)](https://github.com/dpw950/Interns-artifacts/assets/68768878/5fc1f643-5f25-45c3-a5d2-9c1187aaf0dd)<br>
 ![127 0 0 1_5500_Interns-artifacts_JS_capstone_invests html (4)](https://github.com/dpw950/Interns-artifacts/assets/68768878/0b22fad6-b6bc-466f-9b1b-9516c9e9b8ab)
 <br>
 
