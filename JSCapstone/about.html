@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYZPharma</title>
+    <style>
+        body{
+            background-color: ghostwhite;
+        }
+        ul.bar{
+            list-style-type: none;
+            background-color: floralwhite;
+            overflow: hidden;
+            padding: 0px 30px;
+            display: flex;
+        }
+        li{
+            float: left;
+        }
+        li a{
+            display: block;
+            color: burlywood;
+            text-align: center;
+            padding: 6px 20px;
+        }
+        li a:hover{
+            background-color:antiquewhite;
+        }
+        a{
+            text-decoration: none;
+        }
+        #comp{
+            display: block;
+            color: burlywood;
+            text-align: center;
+            padding: 6px 20px;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-rows:repeat(2,1fr) ;
+            gap: 20px;
+        }
+        .grid-item{
+            background-color:floralwhite;
+            padding: 20px;
+            text-align:justify;
+        }
+        .title1{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul class="bar">
+            <strong><li id="comp">XYZPharma</li></strong>
+            <strong><li><a href="home.html">Home</a></li></strong>
+            <strong><li><a href="products.html">Products</a></li></strong>
+            <strong><li><a href="investors.html">Investors</a></li></strong>
+            <li><strong><a href="about.html" style="color:brown;">About Us</a></strong></li>
+        </ul>
+    </header>
+    <section>
+        <div class="grid-container">
+            <div class="grid-item">
+                <strong><h2 class="title1">About XYZPharma</h2></strong>
+                <p>Became a public company in 1987 and is well known for its cost-effective manufacturing capablities and a bunch of customers. The company also entered the high speciality generic formulation segment. the formulation business is regularly originated with a divisional structure and has a focused team for international markets. The formulations are designed to meet the requirements of both advanced as well as emerging market oppurtunities. Being in the top 2 Pharmaceutical companies in India for the consolidated revenues. XYZPharma exports to over 124 countries across the world with around 92% of revenues acquired from the international markets.</p>
+            </div>
+            <div class="grid-item">
+                <strong><h2 class="title1">Awards</h2></strong>
+                <ul>
+                    <li>
+                        Conferred with the Pharmaproficient Gold Award for New Chemical Entities 2000.
+                    </li>
+                    <br>
+                    <br>
+                    <li>
+                        WPF Crowns XYZPharma as the 'Best Pharma Company in Emerging Marker' at World Pharmaceutical Awards 2012 in London.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

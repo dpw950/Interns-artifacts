@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYZPharma</title>
+    <style>
+        body{
+            background-color: ghostwhite;
+        }
+        ul.bar{
+            list-style-type: none;
+            background-color: floralwhite;
+            overflow: hidden;
+            padding: 0px 30px;
+            display: flex;
+        }
+        li{
+            float: left;
+        }
+        li a{
+            display: block;
+            color: burlywood;
+            text-align: center;
+            padding: 6px 20px;
+        }
+        li a:hover{
+            background-color:antiquewhite;
+        }
+        a{
+            text-decoration: none;
+        }
+        #comp{
+            display: block;
+            color: burlywood;
+            text-align: center;
+            padding: 6px 20px;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-rows:repeat(2,1fr) ;
+            gap: 20px;
+        }
+        .grid-item{
+            background-color:floralwhite;
+            padding: 20px;
+            text-align:justify;
+        }
+        .title2{
+            color: brown;
+        }
+        section{
+            padding-left: 4%;
+        }
+        button{
+            background-color: antiquewhite;
+            color: brown;
+            border-color: antiquewhite;
+            border-radius: 10%;
+            padding: 7px 7px;
+            width: 7.5%;
+        }
+        button:hover{
+            background-color: floralwhite;
+        }
+        input[type=text]{
+            width: 20%;
+            padding: 7px 7px;
+            border-radius: 5%;
+            border-color: white;
+        }
+        .card {
+            border: 1px solid antiquewhite;
+            padding: 10px;
+            margin: 10px;
+            width: 500px;
+            float: left;
+            background-color: floralwhite;
+            margin-left: 25%;
+            position: absolute;
+        }
+        .card img {
+            width: 200px;
+            height: 200px;
+        }
+        #cardname{
+            color: brown;
+            text-align: center;
+        }
+        .pos{
+            position: relative;
+            margin-left: 40%;
+        }
+        p{
+            margin-left: 10%;
+            color:darkgoldenrod;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul class="bar">
+            <strong><li id="comp">XYZPharma</li></strong>
+            <strong><li><a href="home.html">Home</a></li></strong>
+            <strong><li><a href="products.html" style="color:brown;">Products</a></li></strong>
+            <strong><li><a href="investors.html">Investors</a></li></strong>
+            <li><strong><a href="about.html">About Us</a></strong></li>
+        </ul>
+    </header>
+    <section>
+        <div id="cardsContainer">
+            <div class="card" data-title="Remdesivir">
+                <div class="pos">
+                    <strong><a href="remdesivir.html" id="cardname">Remdesivir</a></strong>
+                </div>
+                <br>
+                <img src="rem.jpg" alt="Remdesivir" style="margin-left: 30%;">
+                <strong><h4 style="color: brown;">Salt Composition:</h4></strong>
+                <p>Carboxylic ester</p>
+                <br>
+                <strong><h4 style="color: brown;">About:</h4></strong>
+                <p>Remdesivir is an antiviral medication used to treat severe cases of COVID-19. It inhibits viral replication by targeting the virus's RNA polymerase enzyme, shortening recovery time in hospitalized patients.</p>
+                <br>
+                <strong><h4 style="color: brown;">Use:</h4></strong>
+                <p>COVID treatment</p>
+                <br>
+                <strong><h4 style="color: brown;">Side effects:</h4></strong>
+                <p>Nausea, gastrointestinal issues, and elevated liver enzymes.</p>
+                <br>
+            </div>
+          </div>
+    </section>
+</body>
+</html>

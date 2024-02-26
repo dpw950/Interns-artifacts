@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYZPharma</title>
+    <style>
+        body{
+            background-color: ghostwhite;
+        }
+        ul.bar{
+            list-style-type: none;
+            background-color: floralwhite;
+            overflow: hidden;
+            padding: 0px 30px;
+            display: flex;
+        }
+        li{
+            float: left;
+        }
+        li a{
+            display: block;
+            color: burlywood;
+            text-align: center;
+            padding: 6px 20px;
+        }
+        li a:hover{
+            background-color:antiquewhite;
+        }
+        a{
+            text-decoration: none;
+        }
+        #comp{
+            display: block;
+            color: burlywood;
+            text-align: center;
+            padding: 6px 20px;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-rows:repeat(2,1fr) ;
+            gap: 20px;
+        }
+        .grid-item{
+            background-color:floralwhite;
+            padding: 20px;
+            text-align:justify;
+        }
+        .title2{
+            color: brown;
+        }
+        section{
+            padding-left: 4%;
+        }
+        button{
+            background-color: antiquewhite;
+            color: brown;
+            border-color: antiquewhite;
+            border-radius: 10%;
+            padding: 7px 7px;
+            width: 7.5%;
+        }
+        button:hover{
+            background-color: floralwhite;
+        }
+        input[type=text]{
+            width: 20%;
+            padding: 7px 7px;
+            border-radius: 5%;
+            border-color: white;
+        }
+        .card {
+            border: 1px solid antiquewhite;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            float: left;
+            background-color: floralwhite;
+        }
+        .card img {
+            width: 200px;
+            height: 200px;
+        }
+        #cardname{
+            color: brown;
+        }
+        #noResults{
+            color: brown;
+        }
+        #message {
+            border: 1px solid ghostwhite;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            float: left;
+            background-color: ghostwhite;
+        }
+        p{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul class="bar">
+            <strong><li id="comp">XYZPharma</li></strong>
+            <strong><li><a href="home.html">Home</a></li></strong>
+            <strong><li><a href="products.html" style="color:brown;">Products</a></li></strong>
+            <strong><li><a href="investors.html">Investors</a></li></strong>
+            <li><strong><a href="about.html">About Us</a></strong></li>
+        </ul>
+    </header>
+    <section>
+        <strong><h2 class="title2">Products</h2></strong>
+        <input type="text" id="prname" placeholder="Product Name">&nbsp;&nbsp;
+        <button type="submit">Search</button>
+        <br><br>
+        <div id="cardsContainer">
+            <div class="card" data-title="Dolo 650">
+              <img src="dolo.webp" alt="Dolo 650">
+              <strong><a href="dolo.html" id="cardname">Dolo 650</a></strong>
+            </div>
+            <div class="card" data-title="Remdesivir">
+              <img src="rem.jpg" alt="Remdesivir">
+              <strong><a href="remdesivir.html" id="cardname">Remdesivir</a></strong>
+            </div>
+            <div class="card" data-title="Pankajakasthuri">
+              <img src="pankaj.webp" alt="Pankajakasthuri">
+              <strong><a href="pankajakasthuri.html" id="cardname">Pankajakasthuri</a></strong>
+            </div>
+            <div class="card" data-title="Ketoconazole">
+                <img src="keto.jpg" alt="Ketoconazole">
+                <strong><a href="keto.html" id="cardname">Ketoconazole</a></strong>
+            </div>
+          </div>
+          <div id="messager">
+            <div id="message" style="display: none;">
+              <strong><p>No matching results found</p></strong>
+            </div>
+          </div>
+    </section>
+    <script>
+        document.getElementById('prname').addEventListener('keyup', function() {
+            let searchTerm = this.value.trim().toLowerCase();
+            let cards = document.querySelectorAll('.card');
+            let message = document.getElementById('message'); 
+            cards.forEach(function(card) {
+                let title = card.getAttribute('data-title').toLowerCase();
+                if (title.includes(searchTerm) || searchTerm === '') {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+    
+            if (searchTerm === '') {
+                message.style.display = 'none';
+            } else {
+                let found = Array.from(cards).some(function(card) {
+                    let title = card.getAttribute('data-title').toLowerCase();
+                    return title.includes(searchTerm);
+                });
+                if (!found) {
+                    message.style.display = 'block';
+                } else {
+                    message.style.display = 'none';
+                }
+            }
+        });
+    </script>
+    
+</body>
+</html>
