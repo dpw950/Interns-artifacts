@@ -24,7 +24,7 @@ Home page<br>
 
 <br>Products page<br>
 ![127 0 0 1_5500_Interns-artifacts_JS_capstone_prods html](https://github.com/dpw950/Interns-artifacts/assets/68768878/a7fbeb43-72fd-48b1-988a-42b9f8c140b5)<br>
-![127 0 0 1_5500_Interns-artifacts_JS_capstone_prods html (3)](https://github.com/dpw950/Interns-artifacts/assets/68768878/3235d508-6d2b-4e8d-b4e8-435bb6e5c389)
+![127 0 0 1_5500_Interns-artifacts_JS_capstone_prods html (4)](https://github.com/dpw950/Interns-artifacts/assets/68768878/db73f426-6d05-4738-830f-a70c16234d43)
 <br>
 <br>Products page search<br>
 ![127 0 0 1_5500_Interns-artifacts_JS_capstone_prods html (1)](https://github.com/dpw950/Interns-artifacts/assets/68768878/35eef4fb-496f-46a3-a809-7ddec2ffc36d)
@@ -45,3 +45,6 @@ Home page<br>
 <br>Investors page no match<br>
 ![127 0 0 1_5500_Interns-artifacts_JS_capstone_invests html (3)](https://github.com/dpw950/Interns-artifacts/assets/68768878/acf143a2-9698-4220-bb6f-1eb44e0a9815)
 <br>
+
+<br>About Us page<br>
+![127 0 0 1_5500_Interns-artifacts_JS_capstone_about html](https://github.com/dpw950/Interns-artifacts/assets/68768878/c004f96b-5bf7-453e-a970-3d36bbf27861)
