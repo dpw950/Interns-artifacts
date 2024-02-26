@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <script src="product_src.js"></script>
+    <style>
+          body{
+            background-color:#ffd1d1;
+        }
+        img {
+            width: 1250px;
+            height: 200px;
+        }
+
+        .nav{
+            list-style-type: none;
+            overflow: hidden;
+            padding: 0%;
+            margin: 0%;
+            background-color:	#FCA3B7;
+            border-radius: 10px;
+        }
+        li{
+            float: left;
+            
+        }
+        li a{
+            padding: 20px 14px;
+            display: block;
+            padding-left: 40px;
+            padding-right: 40px;
+            color: black;
+            text-align:center;
+            text-decoration: none;
+        }
+        .company{
+            color: black;
+            padding: 20px 14px;;
+        }
+        li a:hover:not(.active)
+        {
+            background-color:#ffd9df;
+        }
+        .active{
+            background-color: rgba(128, 0, 128, 0.493);
+        }
+       .flex-container{
+        display: flex;
+        flex-direction: column;
+       }
+       .item{
+        margin: 10px;
+            height: 260px;
+            width: 630px;
+            background-color: #FCA3B7;
+            border-radius: 20px;
+       }
+       .item2{
+        margin: 10px;
+            height: 200px;
+            width: 630px;
+            background-color: #FCA3B7;
+            border-radius: 20px;
+       }
+       .item:hover{
+            transform: scale(1.05);
+        }
+        .item2:hover{
+            transform: scale(1.05);
+        }
+       p{
+        margin: 20px;;
+       }
+       .gif{
+        position: absolute;
+        left:670px;
+        top: 80px;
+        width: 580px;
+        height: 500px;
+        border-radius: 20px;
+       }
+    </style>
+
+</head>
+<body>
+    
+    <section class="nav-bar">
+        <ul class="nav">
+           <li ><div class="company">SKY PHARMACY</div></li> 
+           <li><a href="home.html">HOME</a></li> 
+           <li> <a href="products.html">PRODUCTS</a></li>
+            <li><a href="investors.html">INVESTORS</a></li>
+            <li><a href="about_us.html">ABOUT US</a></li>
+        </ul>
+    </section>
+    
+    <section>
+        <div class="flex-container">
+            <div class="item">
+                <h1 style="margin: 20px;">
+                    ABOUT SHY PHARMACY
+                </h1>
+                <hr>
+                <p>Became a public company in 1987 and is well known for its cost-effective manufacturing capabilities and a bunch of customers. The company als entered the high gespecially generic formulations segment. The formulation business is regularly organized with a divisional structure and has a focused team for International mallets. The fommons designed to meet the requirements of both advanced as well as emerging market opportunities Being in the top 2 Pharmaceutical companies in lenda for the cont revenues. Shy pharmacy exports to over 124 countries across the world with around 92% of revenues acquired from international operations A</p>
+            </div>
+            <div class="item2">
+                <h1 style="margin: 20px;">AWARDS</h1>
+                <ul>
+                    <li>Conferred with the Pharmaproficient Gold Award for New Chemical Entities 2000</li>
+                    <li>WPF crowns Sky pharmacy as the Best Pharma Company in Emerging Market ar World Pharmaceutical Awards 2012 in London</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+   
+    <section>
+        <img class="gif" src="monkey-medicine.gif">
+    </section>
+</body>
+</html>

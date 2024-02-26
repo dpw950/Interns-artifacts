@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Second Page</title>
+  <style>
+      body{
+            background-color:#ffd1d1;
+        }
+        img {
+            width: 1250px;
+            height: 200px;
+        }
+
+        ul{
+            list-style-type: none;
+            overflow: hidden;
+            padding: 0%;
+            margin: 0%;
+            background-color:	#FCA3B7;
+            border-radius: 10px;
+        }
+        li{
+            float: left;
+            
+        }
+        li a{
+            padding: 20px 14px;
+            display: block;
+            padding-left: 40px;
+            padding-right: 40px;
+            color: black;
+            text-align:center;
+            text-decoration: none;
+        }
+        .company{
+            color: black;
+            padding: 20px 14px;;
+        }
+        li a:hover:not(.active)
+        {
+            background-color:#ffd9df;
+        }
+        .active{
+            background-color: rgba(128, 0, 128, 0.493);
+        }
+    .flex-container
+    {
+        display: flex;
+    }
+    .item
+    {
+        margin: 10px;
+        margin-left:300px;
+            height: 520px;
+            width: 650px;
+            background-color: #FCA3B7;
+            border-radius: 20px;
+            border:2px solid #f15c7c
+    }
+  </style>
+</head>
+<body>
+    <section class="nav-bar">
+        <ul>
+           <li ><div class="company">SKY PHARMACY</div></li> 
+           <li><a href="home.html">HOME</a></li> 
+           <li> <a href="products.html">PRODUCTS</a></li>
+            <li><a href="investors.html">INVESTORS</a></li>
+            <li><a href="about_us.html">ABOUT US</a></li>
+          
+        </ul>
+    </section>
+  <div class="flex-container">
+    <div class="item">
+        <p style="padding-left: 10px;"><b>Name:</b></p>
+        <p id="title" style="margin-left: 30px;"> </p><br>
+        <p style="padding-left: 10px;"><b>Salt composition:</b></p>
+        <p id="salt" style="margin-left: 30px;"></p><br>
+        <p style="padding-left: 10px;"><b>About:</b></p>
+        <p id="about" style="margin-left: 30px;"></p><br>
+        <p style="padding-left: 10px;"><b>Side Effects:</b></p>
+        <p id="side_effect" style="margin-left: 30px;"></p>
+        <hr>
+        <p id="note" style="margin-left: 10px;"></p>
+    </div>
+  </div>
+  
+</div>
+  <script>
+    
+    const urlParams = new URLSearchParams(window.location.search);
+    const imageNumber = urlParams.get('image');
+
+    let title = "";
+    let salt="";
+    let about="";
+   
+    let side_effect="";
+    let note="Note:consume as prescribed by doctors"
+    switch (imageNumber) {
+      case "1":
+        title="Celexa";
+        salt="10 mg";
+        about="This medication is used to treat depression. Citalopram belongs to a class of drugs known as selective serotonin reuptake inhibitors (SSRIs). It works by helping to restore the balance of a certain natural substance (serotonin) in the brain.";
+        side_effect="Nausea, dry mouth, loss of appetite, tiredness, drowsiness, sweating, blurred vision, and yawning may occur. If any of these effects last or get worse, tell your doctor or pharmacist promptly";
+        break;
+      case "2":
+      title="Prozac";
+        salt="20 mg";
+        about="This medication is used to treat certain mental/mood disorders (such as depression, panic attacks, obsessive compulsive disorder). It is also used to treat a certain eating disorder (bulimia) and a severe form of premenstrual syndrome (premenstrual dysphoric disorder).";
+        side_effect="Nausea, dry mouth, loss of appetite, tiredness, drowsiness, sweating, blurred vision, and yawning may occur. If any of these effects last or get worse, tell your doctor or pharmacist promptly";
+        break;
+      case "3":
+      title="Zocor";
+        salt="10 mg";
+        about="This medication is used to treat depression. Citalopram belongs to a class of drugs known as selective serotonin reuptake inhibitors (SSRIs). It works by helping to restore the balance of a certain natural substance (serotonin) in the brain.";
+        side_effect="Nausea, dry mouth, loss of appetite, tiredness, drowsiness, sweating, blurred vision, and yawning may occur. If any of these effects last or get worse, tell your doctor or pharmacist promptly";
+        break;
+     case "4":
+        title="Adderall";
+        salt="15 mg";
+        about="This medication is used to treat depression. Citalopram belongs to a class of drugs known as selective serotonin reuptake inhibitors (SSRIs). It works by helping to restore the balance of a certain natural substance (serotonin) in the brain.";
+        side_effect="Nausea, dry mouth, loss of appetite, tiredness, drowsiness, sweating, blurred vision, and yawning may occur. If any of these effects last or get worse, tell your doctor or pharmacist promptly";
+        break;
+    case "5":
+        title="Mobic";
+        salt="15 mg";
+        about="This medication is used to treat depression. Citalopram belongs to a class of drugs known as selective serotonin reuptake inhibitors (SSRIs). It works by helping to restore the balance of a certain natural substance (serotonin) in the brain.";
+        side_effect="Nausea, dry mouth, loss of appetite, tiredness, drowsiness, sweating, blurred vision, and yawning may occur. If any of these effects last or get worse, tell your doctor or pharmacist promptly";
+        break;
+      default:
+        info = "No info available";
+    }
+
+    document.getElementById('title').innerText = title;
+    document.getElementById('salt').innerText = salt;
+    document.getElementById('about').innerText = about;
+    document.getElementById('side_effect').innerText = side_effect;
+    document.getElementById('note').innerText=note;
+  </script>
+</body>
+</html>

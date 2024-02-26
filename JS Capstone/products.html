@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    
+    <style>
+          body{
+            background-color:#ffd1d1;
+        }
+        img {
+            width: 1250px;
+            height: 200px;
+        }
+
+        ul{
+            list-style-type: none;
+            overflow: hidden;
+            padding: 0%;
+            margin: 0%;
+            background-color:	#FCA3B7;
+            border-radius: 10px;
+        }
+        li{
+            float: left;
+            
+        }
+        li a{
+            padding: 20px 14px;
+            display: block;
+            padding-left: 40px;
+            padding-right: 40px;
+            color: black;
+            text-align:center;
+            text-decoration: none;
+        }
+        .company{
+            color: black;
+            padding: 20px 14px;;
+        }
+        li a:hover:not(.active)
+        {
+            background-color:#ffd9df;
+        }
+        .active{
+            background-color: rgba(128, 0, 128, 0.493);
+        }
+        #search
+        {
+            background-color: white;
+            width: 200px;
+            height: 40px;
+          border-color: #FCA3B7;
+          border-radius: 20px;
+        }
+        #root
+        {
+            display: grid;
+            grid-template-columns: (3,1fr);
+            grid-gap:20px;
+        }
+        img{
+            height: 50px;
+            width: 50px;
+       
+        }
+        .fluid-container
+        {
+            width: 100%;
+            height: auto;
+            padding: 0px 0px 80px 0px ;
+            border-color: #FCA3B7;
+        }
+        .container{
+            width:1200px;
+            height: auto;
+            margin: auto;
+        }
+        .container .search
+        {
+            display: flex;
+            padding: 30px 0px;
+            
+           
+        }
+        .container .product-list
+        {
+            display: flex;
+            flex-wrap: wrap;
+           
+           
+           
+        }
+        .container .product-list .product{
+            margin: 10px;
+         
+            border:5px solid #ff6e8d;
+            height: 230px;
+            width: 200px;
+            background-color: #FCA3B7;
+            border-radius: 20px;
+        }
+         .container .product-list .product img{
+           margin-top: 30px;
+           margin-left: 45px;
+           height: 100px;
+           width: 100px;;
+        }
+
+        .container .product-list .product h3{
+            margin-left: 45px;
+        }
+       #find{
+        border:3px solid #FCA3B7;
+        width: 250px;
+        height: 30px;
+        border-radius: 10px;
+       }
+       .details
+       {
+        border: 1px solid #f48099;
+        margin-left:55px;
+        background-color: #f7bac7;
+       }
+      
+    </style>
+
+</head>
+<body>
+    
+    <section class="nav-bar">
+        <ul>
+           <li ><div class="company">SKY PHARMACY</div></li> 
+           <li><a href="home.html">HOME</a></li> 
+           <li> <a href="products.html">PRODUCTS</a></li>
+            <li><a href="investors.html">INVESTORS</a></li>
+            <li><a href="about_us.html">ABOUT US</a></li>
+        </ul>
+    </section>
+    <section>
+        <h1 style="font-size: 50px;">PRODUCTS</h1>
+       
+
+    </section>
+
+
+    <section>
+        <div class="fluid-container">
+            <div class="container">
+                <div class="search">
+                    <input type="text" id="find" placeholder="Search here..." onkeyup="search()">
+                    <img id ="qufy"src="quby-quby-th.gif"><br>
+
+                   
+                </div>
+                <div id="msg"></div>
+                <div class="product-list">
+                    <a href="desc.html?image=1"> 
+                         <div class="product">
+                        <img   src="image/1.webp">
+                        <h3 class="name">Celexa</h3>
+                       
+                      
+                    </div>
+                </a>
+                <a href="desc.html?image=2"> 
+                    <div class="product">
+                        <img src="image/2.webp">
+                        <h3 class="name">Prozac</h3>
+                      
+                    </div>
+                </a>
+                <a href="desc.html?image=3"> 
+                    <div class="product">
+                        <img src="image/3.webp">
+                        <h3 class="name">Zocor</h3>
+                       
+                    </div>
+                </a>
+                <a href="desc.html?image=4"> 
+                    <div class="product">
+                        <img src="image/4.webp">
+                        <h3 class="name">Adderall</h3>
+                       
+                    </div>
+                </a>
+                <a href="desc.html?image=5"> 
+                    <div class="product">
+                        <img src="image/5.webp">
+                        <h3 class="name">Mobic</h3>
+                        
+                    </div>
+                </a>
+                
+           
+
+            </div>
+        </div>
+            </div>
+        </div>
+       
+    </section>
+  
+
+    <script>
+
+// function search()
+// {
+//     var filter=document.getElementById("find").value.toUpperCase();
+//     var item=document.querySelectorAll(".product");
+//     var l=document.getElementsByTagName('h3');
+
+//     for(var i=0;i<=l.length;i++)
+//     {
+//         let a=item[i].getElementsByTagName('h3')[0];
+//         let value=a.innerHTML||a.innerText||a.textContent;
+//         if (value.toUpperCase().indexOf(filter)>-1)
+//         {
+//             item[i].style.display="";
+//             var found=true;
+//         }
+//         else{
+//             item[i].style.display="none";
+//         }
+//     }
+
+//     // Check if there are any visible entries in the table
+//     let visibleItems = Array.from(item).filter(item => item.style.display !== "none");
+
+//     //If there are no visible entries, display a message
+//     if (visibleItems.length === 0) {
+//         // alert('Sorry, not available');
+//         document.getElementById('msg').innerHTML="Sorry, this medicine is not available";
+//         setTimeout(function() {
+//   location.reload();
+// }, 1000);
+//     }
+
+        function search()
+        {
+            var filter=document.getElementById("find").value.toUpperCase();
+    var item=document.querySelectorAll(".product");
+    var l=document.getElementsByTagName('h3');
+// Check if there are any visible entries in the table
+let visibleItems = Array.from(item).filter(item => item.style.display !== "none");
+
+//If there are no visible entries, display a message
+if (visibleItems.length === 0) {
+    // alert('Sorry, not available');
+    document.getElementById('msg').innerHTML="Sorry, this medicine is not available";
+//     setTimeout(function() {
+//   location.reload();
+// }, 1000);
+}
+if(filter === ''){
+        document.getElementById('msg').innerHTML="";
+    }
+var found=false;
+            for(var i=0;i<=l.length;i++)
+{
+    let a=item[i].getElementsByTagName('h3')[0];
+  let value=a.innerHTML||a.innerText||a.textContent;
+    if (value.toUpperCase().indexOf(filter)>-1)
+    {
+        item[i].style.display="";
+        found=true;
+    }
+    else{
+        item[i].style.display="none";
+        
+        
+    }
+}
+// if(!found)
+// {
+//     document.getElementById('msg').innerHTML="Sorry";
+// }
+
+    if(filter === ''){
+        document.getElementById('msg').innerHTML="";
+    }
+        }
+
+
+
+   
+    </script>
+</body>
+</html>

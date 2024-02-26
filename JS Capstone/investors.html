@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investors</title>
+
+
+    <style>
+        body{
+            background-color:#ffd1d1;
+        }
+        img {
+            width: 1250px;
+            height: 200px;
+        }
+
+        ul{
+            list-style-type: none;
+            overflow: hidden;
+            padding: 0%;
+            margin: 0%;
+            background-color:	#FCA3B7;
+            border-radius: 10px;
+        }
+        li{
+            float: left;
+            
+        }
+        li a{
+            padding: 20px 14px;
+            display: block;
+            padding-left: 40px;
+            padding-right: 40px;
+            color: black;
+            text-align:center;
+            text-decoration: none;
+        }
+        .company{
+            color: black;
+            padding: 20px 14px;;
+        }
+        li a:hover:not(.active)
+        {
+            background-color:#ffd9df;
+        }
+        .active{
+            background-color: rgba(128, 0, 128, 0.493);
+        }
+        table {
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+thead,
+tfoot {
+  background-color: rgb(228 240 245);
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+}
+* {
+   box-sizing: border-box;
+}
+
+#myInput {
+ 
+  width: 150px;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 3px solid #FCA3B7;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+#myInput1 {
+
+ 
+  width: 150px;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 3px solid #FCA3B7;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+#show{
+  border: 2px solid #FCA3B7;
+  border-radius: 20px;
+  background-color: #ffd1d1;
+  width:150px;
+  font-size: 16px;
+  padding: 10px 12px 12px 20px;
+  color:black;
+}
+    </style>
+</head>
+<body>
+    <section class="nav-bar">
+        <ul>
+           <li ><div class="company">SKY PHARMACY</div></li> 
+           <li><a href="home.html">HOME</a></li> 
+           <li> <a href="products.html">PRODUCTS</a></li>
+            <li><a href="investors.html">INVESTORS</a></li>
+            <li><a href="about_us.html">ABOUT US</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>Quater Details</h1>
+    </section>
+
+
+    
+Quater:<input type="text" id="myInput" required >
+Financial Year:<input type="text" id="myInput1"  required>
+<button id="show"onClick="myFunction()">Details</button>
+
+<p>Available quarters:<mark >Q01 2012</mark> ,<mark>Q02 2020</mark>, <mark>Q05 9080</mark></p>
+<div id="msg"></div>
+<!-- <table id="showTable">
+    <tr>
+        <th id="quater"></th>
+        <th id="year"></th>
+        <th id="sales"></th>
+        <th id="other_income"></th>
+        <th id="gross_profit">G</th>
+        <th id="depreciation"></th>
+        <th id="Interest"></th>
+        <th id="Tax"></th>
+        <th id="net_profit"></th>
+    </tr>
+</table> -->
+<table id="myTable" style="visibility: hidden;">
+  <tr class="header">
+    
+        <th>Quarter</th>
+        <th>Year</th>
+        <th>Sales</th>
+        <th>Other income</th>
+        <th>Gross profit</th>
+        <th>Depreciation</th>
+        <th>Interest</th>
+        <th>Tax</th>
+        <th>Net profit</th>
+       
+  </tr>
+  <tr>
+    <td>Q01</td>
+    <td>2012</td>
+    <td>210982</td>
+    <td>1906</td>
+    <td>18680.02</td>
+    <td>1129</td>
+    <td>12</td>
+    <td>12750</td>
+    <td>789235</td>
+</tr>
+  
+    <tr>
+        <td>Q02</td>
+        <td>2020</td>
+        <td>210982</td>
+        <td>1906</td>
+        <td>18680.02</td>
+        <td>1129</td>
+        <td>12</td>
+        <td>12750</td>
+        <td>789235</td>
+    </tr>
+  
+  <tr>
+    <td>Q05</td>
+    <td>9080</td>
+    <td>209982</td>
+    <td>1968</td>
+    <td>18680.02</td>
+    <td>129</td>
+    <td>12</td>
+    <td>750</td>
+    <td>30905</td>
+  </tr>
+
+</table> 
+    <!-- <section>
+        <div class="search-container">
+C:\Users\sms002\Documents\New folder\JS Capstone\investors.html
+            <div class="search">
+                Quater:<input type="text" id="myInput" onkeyup="myFunction()">
+            
+               
+            </div>
+
+            <div class="table">
+                <table class="myTable">
+                   
+                        <tr>
+                         <th>Quarter</th>
+                         <th>Year</th>
+                         <th>Sales</th>
+                         <th>Other income</th>
+                         <th>Gross profit</th>
+                         <th>Depreciation</th>
+                         <th>Interest</th>
+                         <th>Tax</th>
+                         <th>Net profit</th>
+                        </tr>
+                     
+                        <tr>
+                            <td>Q01</td>
+                            <td>2012</td>
+                            <td>210982</td>
+                            <td>1906</td>
+                            <td>18680.02</td>
+                            <td>1129</td>
+                            <td>12</td>
+                            <td>12750</td>
+                            <td>789235</td>
+                        </tr>
+
+                        <tr>
+                            <td>Q02</td>
+                            <td>2020</td>
+                            <td>210982</td>
+                            <td>1906</td>
+                            <td>18680.02</td>
+                            <td>1129</td>
+                            <td>12</td>
+                            <td>12750</td>
+                            <td>789235</td>
+                        </tr>
+                  
+                </table>
+             
+            </div>
+            
+               
+            
+        </div>
+    </section>  -->
+
+    <script>
+       function myFunction() {
+  var input, filter, filter1, table, tr, td, i, txtValue, td1, txtValue1;
+  input = document.getElementById("myInput");
+  input1 = document.getElementById("myInput1");
+  var ch1,ch2;
+  var flag=0;
+  ch1=document.getElementById("myInput").value;
+  ch2=document.getElementById("myInput1").value;
+  if((ch1 || ch2)=='')
+  {
+    document.getElementById('myTable').style.visibility="hidden";
+    window.alert('enter reqiured fields');
+    Break;
+  }
+  filter = input.value.toUpperCase();
+  filter1 = input1.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+
+
+  let found = false;
+
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    td1 = tr[i].getElementsByTagName("td")[1];
+
+    if (td && td1) {
+      txtValue = td.textContent || td.innerText;
+      txtValue1 = td1.textContent || td1.innerText;
+
+      if ((txtValue.toUpperCase().indexOf(filter) > -1) && (txtValue1.toUpperCase().indexOf(filter1) > -1)) {
+        document.getElementById("myTable").style.visibility = "visible";
+        tr[i].style.display = "";
+found=true;
+        // document.getElementById("myTable").style.visibility = "visible";
+        // tr[i].style.display = "";
+        // found = true;
+      }
+
+      else {
+        tr[i].style.display = "none";
+       
+      }
+      }
+  }
+  if (!found) {
+    document.getElementById('myTable').style.visibility = "hidden";
+    document.getElementById('msg').innerHTML = "Not available";
+  }
+    }
+   
+
+        
+//         function myFunction()
+//         {
+//             var input, filter, table, tr, td, i, txtValue,td1,txtValue1;
+            
+//   input = document.getElementById("myInput");
+//   input1=document.getElementById("myInput1");
+//   filter = input.value.toUpperCase();
+//   table = document.getElementById("myTable");
+//   tr = table.getElementsByTagName("tr");
+//   for (i = 0; i < tr.length; i++) {
+//     td = tr[i].getElementsByTagName("td")[0];
+//     td1 = tr[i].getElementsByTagName("td")[1];
+//     if (td && td1) {
+//       txtValue = td.textContent || td.innerText;
+//       txtValue1 = td1.textContent || td1.innerText;
+//       if ((txtValue.toUpperCase().indexOf(filter) > -1)  && (txtValue1.toUpperCase().indexOf(filter) > -1)) {
+//         document.getElementById("myTable").style.visibility="visible";
+//         tr[i].style.display = "";
+//       } else {
+//         tr[i].style.display = "none";
+        
+//       }
+//     }       
+//   }
+        
+//         }
+
+
+// let filters = ["",""];
+
+// function setFilter(thisInput, thisIndex) {
+//   filters[thisIndex] = thisInput.value.toUpperCase();
+  
+//   filterTable();
+// }
+
+// function filterTable() {
+//   var table = document.getElementById("myTable");
+//   var rows = Object.values(table.getElementsByTagName("tr"));
+  
+//   for(var rowItr=1; rowItr < rows.length; rowItr++) {
+//     var row = rows[rowItr];
+//     var cells = Object.values(row.getElementsByTagName("td"));
+    
+    
+//     var isRowVisible = filters.every((filter, filterIndex) => {
+//         var cell = cells[filterIndex];
+//         var txtValue = cell.textContent || cell.innerText;
+
+//         return filter === "" || txtValue.toUpperCase().indexOf(filter) > -1;
+//     });
+    
+//     row.style.visibility = isRowVisible ? "visible" : "hidden";
+//   };
+// }
+//     </script>
+</body>
+</html>

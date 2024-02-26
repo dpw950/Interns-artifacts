@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ </head>   
+    <style>
+        body{
+            background-color:#ffd1d1;
+        }
+        img {
+            width: 1250px;
+            height: 200px;
+            object-fit: contain;
+        }
+
+        ul{
+            list-style-type: none;
+            overflow: hidden;
+            padding: 0%;
+            margin: 0%;
+            background-color:	#FCA3B7;
+            border-radius: 10px;
+        }
+        li{
+            float: left;
+            
+        }
+        li a{
+            padding: 20px 14px;
+            display: block;
+            padding-left: 40px;
+            padding-right: 40px;
+            color: black;
+            text-align:center;
+            text-decoration: none;
+        }
+        .company{
+            color: black;
+            padding: 20px 14px;;
+        }
+        li a:hover:not(.active)
+        {
+            background-color:#ffd9df;
+        }
+        .active{
+            background-color: rgba(128, 0, 128, 0.493);
+        }
+
+        .flex-container
+        {
+            display: flex;
+            flex-direction: column;
+        }
+        .item
+        {
+            margin: 10px;
+            height: 140px;
+            width: 630px;
+            background-color: #FCA3B7;
+            border-radius: 20px;
+        }
+
+        .item:hover{
+            transform: scale(1.05);
+        }
+        .flex-container2{
+            display: flex;
+            
+          
+        }
+        .item2{
+            position: absolute;
+            width: 570px;
+            top:280px;
+            left: 680px;
+            background-color: #FCA3B7;
+            height: 295px;
+            border-radius: 20px;
+        }
+        .item2:hover{
+            transform: scale(1.05);
+        }
+        .content{
+            margin:30px;
+        }
+        .head1{
+            margin:30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+      <img src="nurse-injection.gif">
+    </header>
+    <section class="nav-bar">
+        <ul>
+           <li ><div class="company">SKY PHARMACY</div></li> 
+           <li><a href="home.html">HOME</a></li> 
+           <li> <a href="products.html">PRODUCTS</a></li>
+            <li><a href="investors.html">INVESTORS</a></li>
+            <li><a href="about_us.html">ABOUT US</a></li>
+          
+        </ul>
+    </section>
+
+    <section>
+        <div class="flex-container">
+            <div class="item">
+                <h1 class="head1">VISION</h1>
+                <p class="content">To be one of the world's most innovative, best doing and committed pharmaceutical company.</p>
+            </div>
+            <div class="item">
+                <h1 class="head1">MISSION</h1>
+                <p class="content">To provide the best qualityproducts to people of the world. To commit ourselves for humanity's search for longer, healthier , happier lives through innovation in medicines.</p>
+            </div>
+        </div>
+        <div class="flex-container2">
+            <div class="item2">
+                <h1 class="head1">WHY US?</h1>
+                <p class="content">Good health is indeed the most valuable thing for everyone. And for more than 100 years, we are with the people of the world for laying the foundation of vibrant lives. Today, as the world's largest and most extended healthcare company, we are bound to use our reach and size for good.  We diligently attempt to  improve access and affordability, create healthier communities,  and help people attain their best health at every life stage. </p>
+           <img style="width: 70px;height: 70px;" src="health-covid.gif">
+           
+            </div>
+        </div>
+    </section>
+</body>
+</html>
