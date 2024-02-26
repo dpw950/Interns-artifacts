@@ -1,0 +1,187 @@
+body{
+    /* background-image: url(images/bg1.jpg); */
+    background-size: cover;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(66, 169, 220); 
+    /* rgb(41, 126, 199); */
+  }
+li{
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+}
+li a{
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    color: white;
+}
+
+li a:hover{
+    background-color: rgb(59, 136, 213);
+}
+
+#pharma-name {
+    color: azure;
+    font-weight: bold;
+}
+.grid-cont{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 10px; 
+}
+
+.col1 div{
+    background-color: rgb(234, 240, 240);
+    padding: 20px;
+    margin: 10px;  
+}
+.col2 div{
+    background-color: rgb(234, 240, 240);
+    padding: 10px 14px 40px;
+    margin: 10px;
+}
+
+.grid-cont2{
+    display: grid;
+    grid-template-rows: 2fr;
+    row-gap: 10px; 
+}
+.row1, .row2{
+    background-color: rgb(234, 240, 240);
+    padding: 20px;
+    margin: 10px;  
+}
+
+p{
+    font-size: 14px;
+}
+.home-h2{
+    color: rgb(41, 126, 199);
+}
+
+footer{
+    background-color: rgb(66, 169, 220);
+    padding: 10px 30px 10px;
+    color: white;
+}
+
+.prod-h2 {
+    text-align: center;
+    color: rgb(65, 84, 100);
+}
+
+.prod-h4 {
+    color: rgb(41, 126, 199);
+}
+
+.search-bar {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    flex-grow: 1;
+    border-radius: 14px;
+}
+
+#search-btn {
+    padding: 10px 20px;
+    background-color: #72b3e4;
+    color: white;
+    margin-left: 10px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+#products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%
+}
+
+.product-card {
+    background-color:  rgb(250, 249, 246);
+    cursor: pointer;
+    width: 25%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #c9cbcd;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    margin-bottom: 5px;
+}
+.prodImage{
+    height: 300px;
+    width: 300px;
+}
+
+#product-details {
+    text-align: center;
+  position:fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60vw;
+  height: 80vh;
+  padding: 20px;
+  background-color: white;
+  /* border: 1px solid #ccc; */
+  display: none;
+  z-index: 10;
+  overflow-y: auto;
+}
+
+#product-details .heading {
+  background-color: rgb(53, 108, 192);
+  color: white;
+  padding: 10px;
+}
+
+#product-details .details {
+  padding: 10px;
+}
+
+#product-details .details h4{
+    color: rgb(41, 126, 199);
+  }
+
+#product-details .details img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+#product-details .details p {
+    text-align:left;
+  margin-bottom: 5px;
+}
+
+#product-details .details h4 {
+    text-align:left;
+  margin-bottom: 5px;
+}
+#product-details .note {
+  padding: 10px;
+  background-color: rgb(234, 240, 240);
+  color: darkblue;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quarter Details</title>
+    <link rel="stylesheet" href="quarterDets.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li id="pharma-name">PHOEBE'S Pharmacy</li>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="investors.html">Investors</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Quarter Details</h2>
+        <div class="available-quarters">
+            <span>Quarter details available of:</span>
+        </div>
+        <div class="input-section">
+            <label for="quarter">Quarter:</label>
+            <input type="text" id="quarter" placeholder="Enter Quarter (e.g. Q1)">
+            <label for="financial-year">Financial Year:</label>
+            <input type="text" id="financial-year" placeholder="Enter Year (e.g. 2018)">
+            <button id="get-details">Get Details</button>
+        </div>
+        <div class="message"></div>
+        <div class="table-container" hidden>
+            <table>
+                <thead>
+                    <tr>
+                    <th>Quarter</th>
+                    <th>Sales</th>
+                    <th>Other Income</th>
+                    <th>Gross Profit</th>
+                    <th>Depreciation</th>
+                    <th>Interest</th>
+                    <th>Tax</th>
+                    <th>Net Profit</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </main>
+  <script src="quarterDets.js"></script>
+
+</body>
+</html>

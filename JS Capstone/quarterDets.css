@@ -1,0 +1,103 @@
+body{
+    /* background-image: url(images/bg1.jpg); */
+    background-size: cover;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(66, 169, 220);
+  }
+li{
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+}
+li a{
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    color: white;
+}
+
+li a:hover{
+    background-color: rgb(59, 136, 213);
+}
+
+#pharma-name {
+    color: azure;
+    font-weight: bold;
+}
+
+h2{
+    margin-top: 40px;
+    color: rgb(41, 126, 199);
+}
+
+.available-quarters {
+    margin-top: 35px;
+}
+
+.quarter {
+  margin: 5px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.highlighted {
+  background-color: rgb(185, 222, 244);
+}
+
+.input-section {
+  margin-top: 35px;
+} 
+
+.input-section label {
+  width: 80px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.input-section input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 18px;
+}
+.input-section button {
+    padding: 10px 20px;
+    background-color: #72b3e4;
+    color: white;
+    margin-left: 10px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+.message {
+  text-align: center;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.table-container {
+  margin: 20px 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+th {
+  background-color: #f0f0f0;
+}
