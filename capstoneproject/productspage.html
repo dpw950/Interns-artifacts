@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+    <link rel="stylesheet" href="capstonestyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <head>
+        <title>Products Page</title>
+    </head>
+    <body>
+        <div class="productscontentbox">
+            <div class="navigationbar">
+                <div class="navigationoption">XYZ Pharma</div>
+                <div class="navigationoption">
+                    <a href="homepage.html">Home <i class="fa-solid fa-house-chimney" icon></i></a>
+                </div>
+                <div class="navigationoption">
+                    <a href="productspage.html">Products <i class="fa-sharp fa-solid fa-pills" icon></i></a>
+                </div>
+                <div class="navigationoption">
+                    <a href="investorpage.html">Investors <i class="fa-solid fa-file-invoice" icon></i></a>
+                </div>
+                <div class="navigationoption">
+                    <a href="aboutuspage.html">About Us <i class="fa-solid fa-address-card" icon></i></a>
+                </div>
+            </div>
+            <img class="logogif" src="logo.gif" alt="LogoGIF">
+            <img class="logo" src="homepageimage.png" alt="Logo">
+            <h1>Products <i class="fa-sharp fa-solid fa-pills" icon></i></h1>
+            <div class="searchbox">
+                    <input id="find" type="text" placeholder="Search" onkeyup="search()">
+                    <img id="searching" src="search.gif" alt="Searching">
+            </div>
+            <div id="productunavailable">
+                <img id="unavailable" class="productimg" src="unavailable.gif" alt="Productunavailable">
+                <h3 id="unavailabletext" class="productname">Sorry! This medicine is not available.</h3>
+            </div>
+            <div class="allproducts">
+                <div class="product">
+                    <img class="productimg" src="allegra.png" alt="Allegra180mg">
+                    <h3 class="productname">Allegra 180mg</h3>
+                    <p class="productprice">Price : Rs.250</p>
+                    <a class="productdetailsbtn" href="allegra.html">View Details</a>
+                </div>
+                <div class="product">
+                    <img class="productimg" src="budecart.png" alt="BudecortInhaler">
+                    <h3 class="productname">Budecort Inhaler</h3>
+                    <p class="productprice">Price : Rs.430</p>
+                    <a class="productdetailsbtn" href="budecort.html">View Details</a>
+                </div>
+                <div class="product">
+                    <img class="productimg" src="burnol.png" alt="Burnol">
+                    <h3 class="productname">Burnol Ointment</h3>
+                    <p class="productprice">Price : Rs.85</p>
+                    <a class="productdetailsbtn" href="burnol.html">View Details</a>
+                </div>
+                <div class="product">
+                    <img class="productimg" src="cetirizine.png" alt="CetirizineSyrup">
+                    <h3 class="productname">Cetirizine Syrup I.P.</h3>
+                    <p class="productprice">Price : Rs.20</p>
+                    <a class="productdetailsbtn" href="cetirizine.html">View Details</a>
+                </div>
+                <div class="product">
+                    <img class="productimg" src="diclotop.png" alt="Diclotop">
+                    <h3 class="productname">Diclotop Gel</h3>
+                    <p class="productprice">Price : Rs.85</p>
+                    <a class="productdetailsbtn" href="diclotop.html">View Details</a>
+                </div>
+                <div class="product">
+                    <img class="productimg" src="dolo650.png" alt="Dolo650mg">
+                    <h3 class="productname">Dolo 650mg</h3>
+                    <p class="productprice">Price : Rs.30</p>
+                    <a class="productdetailsbtn" href="dolo650.html">View Details</a>
+                </div>
+                <div class="product">
+                    <img class="productimg" src="levolin.png" alt="LevolinInhaler">
+                    <h3 class="productname">Levolin Inhaler</h3>
+                    <p class="productprice">Price : Rs.225</p>
+                    <a class="productdetailsbtn" href="levolin.html">View Details</a>
+                </div>
+                <div class="product">
+                    <img class="productimg" src="montairlckid.png" alt="MontairLCKid">
+                    <h3 class="productname">Montair LC Kid</h3>
+                    <p class="productprice">Price : Rs.120</p>
+                    <a class="productdetailsbtn" href="montairlckid.html">View Details</a>
+                </div>
+                <div class="product">
+                    <img class="productimg" src="nasivions.png" alt="NasivionS">
+                    <h3 class="productname">Nasivion S Drops</h3>
+                    <p class="productprice">Price : Rs.50</p>
+                    <a class="productdetailsbtn" href="nasivions.html">View Details</a>
+                </div>
+            </div>
+        </div>
+        <script src="productspage.js"></script>
+    </body>
+</html>
