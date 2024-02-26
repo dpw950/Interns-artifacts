@@ -17,8 +17,8 @@ Confirmation<br>
 ![css_ex1_home](https://github.com/dpw950/Interns-artifacts/assets/68768878/313217ea-2874-4923-abb1-041b7ab00f55)
 <br>
 
-#### JS Capstone
-<br>Home page<br>
+### JS Capstone
+Home page<br>
 ![127 0 0 1_5500_Interns-artifacts_JS_capstone_home html (1)](https://github.com/dpw950/Interns-artifacts/assets/68768878/a2b93fcb-066c-4a8c-a1d8-47d6d422d901)
 <br>
 
