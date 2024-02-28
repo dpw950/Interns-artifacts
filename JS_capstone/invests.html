@@ -122,12 +122,12 @@
         const notFoundMsg = document.querySelector('#disp-msg-table');
 
         // Check if search strings are empty
-        if (searchStringYear === '' && !searchStringQuarter === '') {
+        if (searchStringYear && searchStringQuarter) { // No need to use (==='')
             // Show all rows
             tableRows.forEach(row => row.style.display = '');
             notFoundMsg.textContent = '';
         }
-        var searchFor = searchStringQuarter+searchStringYear;
+        var searchFor = searchStringQuarter.trim()+searchStringYear.trim();
         searchFor = searchFor.toLowerCase();
         console.log(searchFor)
         let found = false;
@@ -139,7 +139,7 @@
             if (firstCell) {
                 const cellText = firstCell.textContent.toUpperCase();
                 console.log(cellText)
-                if(cellText.toLowerCase().includes(searchFor)){
+                if(cellText.toLowerCase().includes(searchFor)){ // Use optional chaining for filter or includes (?.)
                     row.style.display = '';
                     found = true;
                 } else {
